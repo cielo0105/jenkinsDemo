@@ -1,7 +1,7 @@
 import java.text.SimpleDateFormat
 pipeline {
     agent {
-        label: "demoAgent"
+        label "demoAgent"
     }
     
     stages {
