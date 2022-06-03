@@ -1,9 +1,9 @@
 import java.text.SimpleDateFormat
 pipeline {
-    agent {
-        label "demoAgent"
-    }
-    
+   // agent {
+     //   label "demoAgent"
+    //}
+    agent any
     stages {
         stage('Prepare Today Date') {
             steps {
