@@ -5,21 +5,11 @@ pipeline {
     }
    
    stages {
-        stage('Prepare Today Date') {
-            steps {
-                 script {
-                    def dateFormat = new SimpleDateFormat("yyyyMMddHHmm")
-                    def date = new Date()
-                
-                    today = dateFormat.format(date)                
-                    
-                }                
+      stage('print time') {
+         steps {
+            echo "202206051724"
+        
             } 
-        }
-        stage('Print Today Date') {
-            steps {
-                  echo today
-            } 
-        }
-}
+        }   
+   }
 }
