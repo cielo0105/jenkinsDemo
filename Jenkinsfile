@@ -1,10 +1,10 @@
 import java.text.SimpleDateFormat
 pipeline {
-   // agent {
-     //   label "demoAgent"
-    //}
-    agent any
-    stages {
+   agent {
+        label "demoAgent"
+    }
+   
+   stages {
         stage('Prepare Today Date') {
             steps {
                  script {
