@@ -6,7 +6,7 @@ pipeline {
    stages {
       stage('print time') {
          steps {
-            echo "202206071237"
+            echo "202206071254"
         
             } 
         }   
